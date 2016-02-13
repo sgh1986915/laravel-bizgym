@@ -1,0 +1,35 @@
+<project name="SaaSVenture Application Springboard" default="build" basedir=".">
+	<property name="output" location="${basedir}/build"/>
+	<property environment="env"/>
+
+	<target name="init">
+		<mkdir dir="${output}"/>
+		<exec executable="sh" failonerror="true">
+			<arg line="-c 'curl -s http://getcomposer.org/installer | php'"/>
+		</exec>
+	</target>
+
+	<target name="build" depends="init">
+		<exec executable="sh" failonerror="true">
+			<arg line="-c 'g=$(ls | grep composer.lock);if [ \$g = \composer.lock ];then rm composer.lock;rm vendor/* -R;fi'"/>
+		</exec>
+		<exec executable="php" failonerror="true">
+			<arg line="composer.phar install"/>
+		</exec>
+		<exec executable="php" failonerror="true">
+			<arg line="composer.phar update"/>
+		</exec>
+		<exec executable="php" failonerror="true">
+			<arg line="artisan migrate:application --env=testing"/>
+		</exec>
+		<exec executable="php" failonerror="true">
+			<arg line="vendor/bin/phpunit --coverage-text"/>
+		</exec>
+		<exec executable="php" failonerror="true">
+			<arg line="vendor/bin/phpunit --configuration story.xml"/>
+		</exec>
+		<exec executable="sh" failonerror="true">
+			<arg line="-c 'rm composer.lock;rm vendor/* -R'"/>
+		</exec>
+	</target>
+</project>

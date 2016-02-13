@@ -1,0 +1,692 @@
+/*
+
+CSS for Admin Screens
+
+
+
+*/
+
+.admin .section-header form{
+margin:0px;
+}
+
+.admin .group-header > .row-fluid:first-child {
+	border-top:0px;
+}
+
+
+.admin .group-header {
+    border-top: 0px;
+    padding-top:0em;
+    margin: 20px -20px 40px;
+}
+
+
+.admin .page-header h3{
+	padding-top:0px;
+}
+
+
+.admin .control-label{
+	font-size:1.2em;
+	font-weight:200;
+}
+
+.admin .control-group{
+	margin-bottom:20px;
+}
+
+
+
+
+
+.admin .section-header{
+	border-bottom: 1px solid #EFEFEF;
+    font-size: 1.5em;
+    font-weight: 200;
+    line-height: 1.6em;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0;
+}
+
+
+.admin .section-header .title{
+	
+	display:inline-block;
+	width:auto;
+}
+
+
+.admin .section-header .btn-group{
+	float:right;
+}
+
+.admin .section-header .btn-group .btn{
+	margin-left:1em;
+}
+
+.admin p.help-block{
+	font-size:85%;
+	color: #999999;
+}
+
+/*------------- Menu Management ---------------- */
+
+
+.admin-menu .menu-category{
+	margin-bottom:2em;
+}
+
+.admin.menu-item ul.menu-filters li{
+	padding:0.5em 0.2em;
+}
+
+.menu-item table.menu-item-list td.item-type{
+	font-size: 85%;
+}
+
+.menu-item table.menu-item-list td.item-name{
+	font-weight:bold;
+}
+
+
+/*------------- Menu Management ---------------- */
+
+
+.alerts table.alerts-list td{
+	line-height:50px;
+}
+
+
+.alerts table.alerts-list td.alert-image img{
+	max-width:50px;
+	max-height:50px;
+}
+
+.alerts table.alerts-statistics td.alert-status span.label{
+	width:40px;
+	text-align:center;
+}
+
+.alerts table.alerts-statistics td.alert-date{
+	font-size:85%;
+	color:#999999;
+}
+
+
+.btn-group.alert-options .btn{
+	margin-left:1em;
+} 
+
+.alert-details .box .title{
+	font-size:1.5em;
+	line-height:1.6em;
+	font-weight:200;
+	display:inline-block;
+	width:auto;
+}
+
+.alert-details .box .status{
+	padding:0.5em 1em;
+	float:right;
+	color:#fff;
+}
+
+.alert-details .box .status.active {
+	background-color: #49BF67;
+}
+.alert-details .box .status.inactive{
+	background-color: #F34541;
+}
+
+
+
+.alert-details .box .alert-text{
+	margin:1em 0em;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	padding:1em;
+	background:#f7f7f8;
+	border:1px solid #efefef;
+}
+
+.alert-details span.alert-date {
+	color:#999999;
+}
+
+.alert-details span.alert-author{
+	font-weight:bold;
+}
+
+.alert-details .alert-image img{
+	width:100%;
+	height:100%;
+}
+
+.alert-details ul.target-users{
+	margin-bottom:0em;
+	margin-left:1em;
+}
+
+.alert-details ul.target-users li i{
+	color:#999999;
+}
+
+i.meta-label{
+	display:inline-block;
+	width:25px;
+}
+
+.admin form.form-horizontal .control-label{
+	padding-top:2px;
+}
+
+
+.admin.new-message .control-group{
+	margin-bottom:10px;
+}
+
+/*------------- Messages ---------------- */
+
+
+
+.messages .messages-header .btn-group.new .btn{
+	margin-right:1em;
+}
+
+.messages .messages-header .btn-group.new .btn:last-of-type{
+	margin-right:0em;
+}
+
+.admin #modal-message-cheatsheet ul{
+
+}
+
+
+.admin #modal-message-cheatsheet span.item-name{
+	font-weight:bold;
+	display:inline-block;
+	width:auto;
+}
+
+.admin #modal-message-cheatsheet span.definition{
+	display:inline-block;
+	width:auto;
+	margin-left:1em;
+}
+
+.admin.message-preview .message-info{
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+.admin.message-preview .message-info span.subject{
+	font-size:1.4em;
+	line-height:1.4em;
+}
+
+.admin.message-preview .message-info .message-meta{
+	font-size:0.9em;
+	line-height:0.9em;
+	margin-top:1em;
+}
+
+.admin.message-preview .message-info .message-meta ul.msg-info{
+	margin-left:0px;
+}
+
+.admin.message-preview .message-info .message-meta ul.msg-info li{
+	border:1px solid #EFEFEF;
+ 	box-sizing:border-box;
+  margin:0;
+  padding:0.5em 1em;
+  float:left;
+}
+
+.admin.message-preview .message-info .message-meta ul.msg-info span.item{
+	font-weight:bold;
+}
+
+.admin.message-preview .message-info .message-meta ul.msg-info span.item-value{
+margin-left:15px;
+}
+
+
+/*------------- Forum ---------------- */
+
+
+.admin ul.forum-users li .avatar{
+	display:inline-block;
+	text-align:center;
+
+}
+
+.admin ul.forum-users li {
+	padding:0.3em 0em;
+	line-height:25px;
+}
+
+.admin ul.forum-users li .user-info{
+	display:inline-block;
+}
+
+.admin ul.forum-users li .user-name{
+}
+
+.admin ul.forum-users li .last-post{
+	font-style:italic;
+	color:#999999;
+}
+
+.admin ul.forum-users li .total-posts{
+	font-weight:bold;
+}
+
+.admin ul.forum-users li .total-posts:before{
+	display:inline-block;
+	content:"-";
+	width:10px;
+}
+
+
+
+.admin ul.forum-stats li span.number{
+	display:inline-block;
+	font-size:18px;
+	font-weight:bold;
+	margin-right:10px;
+	text-align:left;
+}
+
+.admin ul.forum-stats li {
+	padding:0.6em 0.5em;
+	line-height:18px;
+	font-size:16px;
+}
+
+
+.admin ul.forum-stats li span.stat{
+	display:inline-block;
+	margin-left:1em;
+}
+
+
+.admin ul.forum-stats li span.rate{
+	display:inline-block;
+	float:right;
+}
+
+
+.admin .recent-posts [data-title='Date']{
+	color:#999999;
+}
+
+.admin.forum.roles .control-label{
+	font-size:1.6em;
+}
+
+.admin.forum.roles ul.permissions-list span.group{
+	float:left;
+	display:inline-block;
+}
+
+
+
+.admin.forum.roles ul.permissions-list span.action{
+	float:right;
+	display:inline-block;
+}
+
+.admin.forum.roles ul.permissions-list{
+	margin-bottom:0em;
+}
+
+
+.admin.forum.roles ul.permissions-list li{
+	display: block;
+    height: auto;
+    overflow: auto;
+    padding: 0.5em 0.2em;
+}
+
+.admin.forum.roles .btn.add-role{
+	margin-left:1em;
+}
+
+.admin.forum.roles .input-append{
+	margin-top:10px;
+}
+
+.admin.settings .settings-group{
+	margin-bottom:1em;
+}
+
+.admin.settings .settings-group .title{
+	font-size:1.6em;
+	line-height:1.6em;
+	font-weight:200;
+}
+
+.admin.settings .settings-group .description{
+	padding:0.6em 0em;
+}
+
+.admin.settings .settings-group .buttons{
+	margin-top:0.6em;
+}
+
+
+
+
+/*------------- Intake ---------------- */
+
+
+.admin.intake .category{
+	margin-bottom:2em;
+}
+
+.admin.intake .dependencies .box-header, .admin.intake .answers .box-header{
+	padding-left:0;
+}
+
+.admin.intake .dependencies .box-header .title, .admin.intake .answers .box-header .title{
+	font-size: 16px;
+    font-weight: 200;
+    line-height: 18px;
+}
+
+.admin.intake .control-group label.main-label{
+	font-size:1.6em;
+	line-height:1.6em;
+}
+
+
+
+.admin.intake .tags ul.tags-list span.group{
+	float:left;
+	display:inline-block;
+}
+
+
+
+.admin.intake .tags ul.tags-list span.action{
+	float:right;
+	display:inline-block;
+}
+
+.admin.intake .tags ul.tags-list{
+	margin-bottom:0em;
+}
+
+
+.admin.intake .tags ul.tags-list li{
+	display: block;
+    height: auto;
+    overflow: auto;
+    padding: 0.5em 0.2em;
+}
+
+
+
+
+
+
+/*------------- Users ---------------- */
+
+
+.admin.users span.label{
+	font-weight:normal;
+}
+
+
+.admin.user-edit .user-photo img {
+
+}
+
+.admin.user-edit .user-photo{
+	margin:0.5em 0em;
+	display:block;
+}
+
+
+
+/*------------- User Details ---------------- */
+
+.profile-content .profile-meta{
+	font-size:1.3em;
+	line-height:1.4em;
+	text-align:left;
+	padding:0.8em;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	 background: none repeat scroll 0 0 #EDEDED;
+}
+
+.profile-content .profile-meta li {
+	margin:0.3em 0em;
+	padding:0.4em;
+	background:#fff;
+	border-radius:5px;
+	border: 1px solid #EFEFEF;
+
+}
+
+.label-large, .label.system{
+	font-size:1em;
+	width:auto;
+	height:auto;
+	padding:0.4em;
+}
+
+.label.system{
+	margin-right:5px;
+}
+
+.profile-content .profile-meta span.item-title{
+	display:inline-block;
+	width:160px;
+}
+
+
+.profile-content .cover-image, .profile-content .profile-image{
+	margin-bottom:10px;
+}
+
+.profile-content .lead{
+	margin-bottom:5px;
+
+}
+
+.admin .profile-content{
+	margin-bottom:2em;
+}
+
+
+.admin .profile-analytics{
+	margin-bottom:2em;
+	padding:0.8em;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	 background: none repeat scroll 0 0 #EDEDED;
+}
+
+.admin .profile-analytics .box-statistic{
+	margin-bottom:0em;
+}
+
+/*------------- Badges ---------------- */
+
+.badges table.badge-table tr td{
+	vertical-align:middle;
+}
+
+.admin .badges .badge-status{
+float:right;
+display:inline-block;
+}
+
+.admin .badges .badge-status .badge-count{
+float:left;
+margin-right:5px;
+}
+
+/*------------- Brands ---------------- */
+
+.brands table.brand-list tr td{
+	vertical-align:middle;
+}
+
+.admin.brand .add-member select{
+	margin-bottom:0px;
+}
+
+.admin .consumer-list li{
+	font-size:1.1em;
+	padding:0.3em;
+}
+
+
+.admin.brand .user-photo{
+	margin:1em 0em;
+}
+
+
+/*------------- Plans ---------------- */
+
+.admin.plan .user-analytics{
+	margin:1em 0em;
+}
+
+/*------------- Features ---------------- */
+
+
+.feature-group [data-title='Icon']{
+text-align:center;
+}
+
+.feature-group table th:first-child{
+	text-align: center;
+}
+
+
+/*------------- Taxonomy Management ---------------- */
+
+.taxonomy .category .box-header{
+	background:#939393;
+}
+
+
+.taxonomy .sub-category .box-header{
+	background:#CECECE;
+	border-bottom:1px solid #dddddd;
+}
+
+.taxonomy .question, .taxonomy .answers{
+	display:none;
+}
+
+
+
+.taxonomy .sub-category .title{
+	font-size:20px;
+	padding-left:10px;
+}
+
+.taxonomy .question{
+	border-top:1px solid #E5E5E5;
+}
+
+.taxonomy .question .box-header{
+	background:#f7f6f6;
+}
+
+
+.taxonomy .question .title{
+	font-size:16px;
+	padding-left:20px;
+}
+
+a.taxonomy-toggle{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EFEFEF;
+    color: #6E6E6E;
+    font-weight:400!important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px !important;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    float:right;
+    top: -2px;
+    position:relative;
+}
+
+
+
+
+.taxonomy .taxonomy-action{
+	display:inline-block;
+	margin-left:1em;
+	position: relative;
+    top: -2px;
+}
+
+.taxonomy .taxonomy-action#category-action{
+	display:inline-block;
+}
+
+.taxonomy .taxonomy-action{
+	display:none;
+}
+
+.taxonomy-action.active{
+	display:inline-block;
+	float:left;
+}
+
+.taxonomy .taxonomy-action a{
+	background: none repeat scroll 0 0 #EFEFEF;
+    border: 1px solid #E9E9E9;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    color: #313131;
+    cursor: pointer;
+    font-size: 10px !important;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.taxonomy .taxonomy-action a:hover{
+	color:#6E6E6E;
+}
+
+
+
+/*--------------------- Billing ------------------------------------*/
+
+
+.admin .billing-stats .box-statistic .pull-right, .billing-stats .box-statistic [class*="icon-"] {
+	font-size: 20px;
+}
+
+.admin .billing-stats .box-statistic .pull-right{
+	position:relative;
+	top:12px;
+}

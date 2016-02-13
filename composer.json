@@ -1,0 +1,78 @@
+{
+	"repositories": [{
+		"type": "composer",
+		"url": "http://packages.saasventure.com"
+	}],
+	"name": "saas/springboard",
+	"description": "SaaS Application Springboard based by The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"require": {
+		"laravel/framework": "4.0.*",
+		"saas/acl": "dev-master",
+		"saas/groups": "dev-master",
+		"saas/admin": "dev-master",
+		"saas/log": "dev-master",
+		"saas/dummy": "dev-master",
+		"saas/badge": "dev-master",
+		"saas/menu": "dev-master",
+		"saas/message": "dev-master",
+		"saas/forum": "dev-master",
+		"cartalyst/sentry": "2.0.*",
+		"lusitanian/oauth": "~0.2",
+		"codeguy/upload": "~1.3",
+		"imagine/imagine": "~0.5.0",
+		"way/generators": "dev-master",
+		"jasonlewis/basset": "dev-master",
+		"leafo/lessphp": "dev-master",
+		"toopay/assetic-minifier": "dev-master"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*",
+		"phpunit/phpunit-story": "dev-master"
+	},
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/libraries/MinFilter.php",
+			"app/libraries/Toastr.php",
+			"app/libraries/Page.php",
+			"app/libraries/AccountMailer.php",
+			"app/libraries/Helpers.php",
+			"app/libraries/GroupPermissions.php",
+			"app/libraries/GroupAccess.php",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestListener.php",
+			"app/tests/TestCase.php",
+			"app/tests/TestClient.php",
+			"app/tests/StoryTestCase.php"
+		],
+		"psr-0": {
+			"App":"app/src"
+		}
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan optimize",
+			"php artisan assets:publish"
+		],
+		"pre-update-cmd": [
+			"php artisan clear-compiled"
+		],
+		"post-update-cmd": [
+			"php artisan optimize",
+			"php artisan assets:publish"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate",
+			"php artisan assets:publish"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
